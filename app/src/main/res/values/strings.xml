@@ -1,3 +1,24 @@
 <resources>
     <string name="app_name">SoftwareMethodologyAndroidPP</string>
+    <string name="specialty_pizzas">Specialty Pizzas</string>
+    <string name="build_your_own">Build Your Own</string>
+    <string name="current_order">Current Order</string>
+    <string name="store_orders">Store Orders</string>
+    <string name="back_string">Back</string>
+    <string name="size_string">Size:</string>
+    <string name="sauce_string">Sauce:</string>
+    <string name="extras_string">Extras:</string>
+    <string name="extra_sauce_string">Extra Sauce</string>
+    <string name="extra_cheese_string">Extra Cheese</string>
+    <string name="quantity_string">Quantity:</string>
+    <string name="add_string">ADD</string>
+    <string name="topping_string">Toppings</string>
+    <string name="price_string">Price:</string>
+    <string name="order_number">Order Number:</string>
+    <string name="subtotal">Subtotal:$</string>
+    <string name="sales_tax">Sales Tax:$</string>
+    <string name="order_total">Order Total:$</string>
+    <string name="remove_button">Remove Mode</string>
+    <string name="place_prder">Place Order</string>
+
 </resources>

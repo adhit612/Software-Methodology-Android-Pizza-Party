@@ -103,6 +103,14 @@ public class BuildYourOwn extends Pizza {
                 extraCheeseString() + extraSauceString() + ": " + "$" +
                 price();
     }
+    /**
+     * Method that returns String name of pizza
+     * @return String name of the pizza
+     */
+    @Override
+    public String getPizzaNameAsString(){
+        return "Build Own";
+    }
 }
 
 

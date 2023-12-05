@@ -36,6 +36,12 @@ public abstract class Pizza {
     public abstract ArrayList<Topping> getToppings();
 
     /**
+     * Method that returns pizza name to be used in recyclerview
+     * @return String name of the pizza
+     */
+    public abstract String getPizzaNameAsString();
+
+    /**
      * Method that handles setting toppings of a pizza.
      */
     public void setToppings(ArrayList<Topping> toppings) {
