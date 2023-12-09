@@ -3071,6 +3071,7 @@ id SHOW_PROGRESS
 id SYM
 id TOP_END
 id TOP_START
+id _dynamic
 id accelerate
 id accessibility_action_clickable_span
 id accessibility_custom_action_0
@@ -3161,6 +3162,8 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id buttonAdd
+id buttonCancel
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3174,6 +3177,8 @@ id center_vertical
 id chain
 id chain2
 id chains
+id checkBoxCheese
+id checkBoxSauce
 id checkbox
 id checked
 id chronometer
@@ -3308,6 +3313,8 @@ id line3
 id linear
 id listMode
 id list_item
+id listviewOrders
+id listviewTop
 id lv_current_order_list
 id lv_toppings_list
 id m3_side_sheet
@@ -3427,7 +3434,11 @@ id progress_circular
 id progress_horizontal
 id pt_enter_quantity
 id radio
+id radiogroupsauce
+id radiogroupsize
 id ratio
+id rbuttonalf
+id rbuttontom
 id rectangles
 id report_drawn
 id reverseSawtooth
@@ -3479,6 +3490,8 @@ id snapMargins
 id south
 id spacer
 id special_effects_controller_view_tag
+id spinnerPrice
+id spinnersize
 id spline
 id split_action_bar
 id spread
@@ -3520,6 +3533,9 @@ id tag_window_insets_animation_callback
 id text
 id text2
 id textEnd
+id textExtras
+id textOrderNum
+id textSauce
 id textSpacerNoButtons
 id textSpacerNoTitle
 id textStart
@@ -3533,6 +3549,10 @@ id textinput_helper_text
 id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
+id textpriceorder
+id textpriceorderlabel
+id textsize
+id textviewPrice
 id time
 id title
 id titleDividerNoCustom
@@ -3820,6 +3840,8 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string add_string
+string add_to_order
+string alfredo
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
@@ -3831,6 +3853,7 @@ string bottomsheet_action_expand_halfway
 string bottomsheet_drag_handle_clicked
 string bottomsheet_drag_handle_content_description
 string build_your_own
+string cancel_order
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
@@ -3839,8 +3862,11 @@ string current_order
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
+string extra_cheese
 string extra_cheese_string
+string extra_sauce
 string extra_sauce_string
+string extras
 string extras_string
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
@@ -3954,7 +3980,10 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string pick_sauce
+string pick_size
 string place_prder
+string price
 string price_string
 string quantity_string
 string remove_button
@@ -3964,6 +3993,7 @@ string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
 string searchview_navigation_content_description
+string select_order_num
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string size_string
@@ -3971,6 +4001,7 @@ string specialty_pizzas
 string status_bar_notification_info_overflow
 string store_orders
 string subtotal
+string tomato
 string topping_string
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light

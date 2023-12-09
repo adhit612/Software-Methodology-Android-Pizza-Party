@@ -20,5 +20,25 @@
     <string name="order_total">Order Total:$</string>
     <string name="remove_button">Remove Mode</string>
     <string name="place_prder">Place Order</string>
+    <string name="pick_size">Pick a Size</string>
+    <string name="pick_sauce">Pick a Sauce</string>
+    <string name="tomato">Tomato</string>
+    <string name="alfredo">Alfredo</string>
+    <string name="extras">Extras</string>
+    <string name="extra_cheese">Extra Cheese</string>
+    <string name="extra_sauce">Extra Sauce</string>
+    <string name="price">Price ($):</string>
+    <string name="add_to_order">ADD TO ORDER</string>
+    <string name="select_order_num">Select order number:</string>
+    <string name="cancel_order">Cancel order</string>
+
+
+
+
+
+
+
+
+
 
 </resources>

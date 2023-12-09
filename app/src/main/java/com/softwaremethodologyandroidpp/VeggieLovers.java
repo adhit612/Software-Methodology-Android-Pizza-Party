@@ -3,6 +3,11 @@ package com.softwaremethodologyandroidpp;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Arrays;
+/**
+ * Class that manages VeggieLovers pizza.
+ *
+ * @author Abhishek Thakare, Adhit Thakur.
+ */
 
 public class VeggieLovers extends Pizza{
     private static final DecimalFormat decimalFormat = new DecimalFormat(
