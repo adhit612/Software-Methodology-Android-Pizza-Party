@@ -16,22 +16,46 @@ import com.softwaremethodologyandroidpp.Topping;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Class that manages the adapter for specialties Recycler View.
+ * @author Abhishek Thakare, Adhit Thakur.
+ */
+
 public class ViewAdapter extends RecyclerView.Adapter<ViewHolder>{
     Context context;
     List<PizzaItem> items;
 
     private static final int ONE = 1;
 
+    /**
+     * Constructor to set up adapter.
+     * @param context context of adapter.
+     * @param items items to be added to view.
+     */
     public ViewAdapter(Context context, List<PizzaItem>items){
         this.context = context;
         this.items = items;
     }
+
+    /**
+     * Method to create view holder.
+     * @param parent The ViewGroup into which the new View will be added after it is bound to
+     *               an adapter position.
+     * @param viewType The view type of the new View.
+     * @return ViewHolder to be added.
+     */
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         return new ViewHolder(LayoutInflater.from(context).inflate(R.layout.pizza_item_view,parent,false));
     }
 
+    /**
+     * Method to bind the view holder.
+     * @param holder The ViewHolder which should be updated to represent the contents of the
+     *        item at the given position in the data set.
+     * @param position The position of the item within the adapter's data set.
+     */
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
         holder.specialtyPizzaImage.setImageResource(items.get(position).getImage());
@@ -53,6 +77,10 @@ public class ViewAdapter extends RecyclerView.Adapter<ViewHolder>{
         holder.sizeSpinner.setAdapter(adapter);
     }
 
+    /**
+     * Method to get the item count in the view.
+     * @return count of items.
+     */
     @Override
     public int getItemCount() {
         return items.size();

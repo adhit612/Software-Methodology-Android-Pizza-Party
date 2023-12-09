@@ -29,6 +29,7 @@ import com.softwaremethodologyandroidpp.Meatzza;
 import com.softwaremethodologyandroidpp.Order;
 import com.softwaremethodologyandroidpp.Pepperoni;
 import com.softwaremethodologyandroidpp.Pizza;
+import com.softwaremethodologyandroidpp.PizzaMaker;
 import com.softwaremethodologyandroidpp.PoultryParty;
 import com.softwaremethodologyandroidpp.R;
 import com.softwaremethodologyandroidpp.Seafood;
@@ -42,6 +43,11 @@ import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 import java.util.logging.Handler;
+
+/**
+ * Class that manages the listeners for a row on the Recylcer View.
+ * @author Abhishek Thakare, Adhit Thakur.
+ */
 
 public class ViewHolder extends RecyclerView.ViewHolder {
     ImageView specialtyPizzaImage;
@@ -63,6 +69,10 @@ public class ViewHolder extends RecyclerView.ViewHolder {
     Boolean validIntegerEntered;
     int quantity;
 
+    /**
+     * Constructor to set up UI items.
+     * @param itemView view of row.
+     */
     public ViewHolder(@NonNull View itemView) {
         super(itemView);
         specialtyPizzaImage = itemView.findViewById(R.id.iv_specialty_pizza_recycler);
@@ -87,30 +97,18 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         addButtonAction();
     }
 
+    /**
+     * Setting the pizza in each row.
+     * @param pizzaName name of pizza.
+     */
     public void setPizzaToBeAdded(String pizzaName) {
-        if (pizzaName.equals("Deluxe")) {
-            pizzaToBeAdded = new Deluxe();
-        } else if (pizzaName.equals("Glizzy Goblin")) {
-            pizzaToBeAdded = new GlizzyGoblin();
-        } else if (pizzaName.equals("Meatzza")) {
-            pizzaToBeAdded = new Meatzza();
-        } else if (pizzaName.equals("Pepperoni")) {
-            pizzaToBeAdded = new Pepperoni();
-        } else if (pizzaName.equals("Poultry Party")) {
-            pizzaToBeAdded = new PoultryParty();
-        } else if (pizzaName.equals("Seafood")) {
-            pizzaToBeAdded = new Seafood();
-        } else if (pizzaName.equals("Spicy Phenom")) {
-            pizzaToBeAdded = new SpicyPhenom();
-        } else if (pizzaName.equals("Stinky Sally")) {
-            pizzaToBeAdded = new StinkySally();
-        } else if (pizzaName.equals("Supreme")) {
-            pizzaToBeAdded = new Supreme();
-        } else if (pizzaName.equals("Veggie Lovers")) {
-            pizzaToBeAdded = new VeggieLovers();
-        }
+        PizzaMaker pizzaMaker = new PizzaMaker();
+        pizzaToBeAdded = pizzaMaker.createPizza(pizzaName);
     }
 
+    /**
+     * Method to handle size spinner action.
+     */
     public void sizeSpinnerAction(){
         sizeSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -130,7 +128,8 @@ public class ViewHolder extends RecyclerView.ViewHolder {
                             pizzaToBeAdded.setSize(Size.LARGE);
                             priceTextField.setText(String.valueOf(pizzaToBeAdded.price()));
                         }
-                        Toast.makeText(selectedItemView.getContext(), specialtyPizzaName.getText() + " size " + sizeSpinnerSelectedSize, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(selectedItemView.getContext(),
+                                specialtyPizzaName.getText() + " size " + sizeSpinnerSelectedSize, Toast.LENGTH_SHORT).show();
                         pizzaQuantityText.setEnabled(true);
                     }
                     else if(sizeSpinnerSelectedSize.equals("Pick")){
@@ -141,17 +140,20 @@ public class ViewHolder extends RecyclerView.ViewHolder {
             }
             @Override
             public void onNothingSelected(AdapterView<?> parentView) {
-                // Do nothing here
             }
         });
     }
 
+    /**
+     * Method to handle cheese spinner action.
+     */
     public void extraCheeseSwitchAction(){
         extraCheeseSwitch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(pizzaToBeAdded == null || sizeSpinnerSelectedSize.equals("Pick") || sizeSpinnerSelectedSize.equals("") || sizeSpinnerSelectedSize == null){
-                    Toast.makeText(v.getContext(), specialtyPizzaName.getText() + ": please select size!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(v.getContext(),
+                            specialtyPizzaName.getText() + ": please select size!", Toast.LENGTH_SHORT).show();
                     extraCheeseSwitch.setChecked(false);
                 }
                 else {
@@ -167,12 +169,16 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         });
     }
 
+    /**
+     * Method to handle sauce spinner action.
+     */
     public void extraSauceSwitchAction(){
         extraSauceSwitch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(pizzaToBeAdded == null || sizeSpinnerSelectedSize.equals("Pick") || sizeSpinnerSelectedSize.equals("") || sizeSpinnerSelectedSize == null){
-                    Toast.makeText(v.getContext(), specialtyPizzaName.getText() + ": please select size!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(v.getContext(),
+                            specialtyPizzaName.getText() + ": please select size!", Toast.LENGTH_SHORT).show();
                     extraSauceSwitch.setChecked(false);
                 }
                 else {
@@ -188,6 +194,9 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         });
     }
 
+    /**
+     * Method to handle quantity text action.
+     */
     public void pizzaQuantityTextAction(){
         pizzaQuantityText.addTextChangedListener(new TextWatcher() {
             @Override
@@ -200,7 +209,8 @@ public class ViewHolder extends RecyclerView.ViewHolder {
                     validIntegerEntered = true;
                     quantity = enteredValue;
                 } catch (NumberFormatException e) {
-                    Toast.makeText(((View) pizzaQuantityText.getParent()).getContext(), "Please enter a valid integer", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(((View) pizzaQuantityText.getParent()).getContext(),
+                            "Please enter a valid integer", Toast.LENGTH_SHORT).show();
                     validIntegerEntered = false;
                 }
             }
@@ -211,22 +221,28 @@ public class ViewHolder extends RecyclerView.ViewHolder {
                     validIntegerEntered = true;
                     quantity = enteredValue;
                 } catch (NumberFormatException e) {
-                    Toast.makeText(((View) pizzaQuantityText.getParent()).getContext(), "Please enter a valid integer", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(((View) pizzaQuantityText.getParent()).getContext(),
+                            "Please enter a valid integer", Toast.LENGTH_SHORT).show();
                     validIntegerEntered = false;
                 }
             }
         });
     }
 
+    /**
+     * Method to handle back to main menu action.
+     */
     public void addButtonAction(){
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 if(pizzaToBeAdded == null || sizeSpinnerSelectedSize.equals("Pick") || sizeSpinnerSelectedSize.equals("") || sizeSpinnerSelectedSize == null){
-                    Toast.makeText(v.getContext(), specialtyPizzaName.getText() + ": please select size!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(v.getContext(), specialtyPizzaName.getText()
+                            + ": please select size!", Toast.LENGTH_SHORT).show();
                 }
                 else if(!validIntegerEntered){
-                    Toast.makeText(v.getContext(), specialtyPizzaName.getText() + ": please enter valid quantity!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(v.getContext(), specialtyPizzaName.getText()
+                            + ": please enter valid quantity!", Toast.LENGTH_SHORT).show();
                 }
                 else{
                     Order order = dataSingleton.getOrder();
@@ -243,7 +259,8 @@ public class ViewHolder extends RecyclerView.ViewHolder {
                         }
                         dataSingleton.setOrder(order);
                     }
-                    Toast.makeText(v.getContext(), specialtyPizzaName.getText() + ":" + "(" + quantity + ") Pizza has been added", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(v.getContext(), specialtyPizzaName.getText() + ":"
+                            + "(" + quantity + ") Pizza has been added", Toast.LENGTH_SHORT).show();
                 }
             }
         });

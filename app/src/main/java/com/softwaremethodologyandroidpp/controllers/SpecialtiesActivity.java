@@ -19,6 +19,7 @@ import com.softwaremethodologyandroidpp.GlizzyGoblin;
 import com.softwaremethodologyandroidpp.Meatzza;
 import com.softwaremethodologyandroidpp.Pepperoni;
 import com.softwaremethodologyandroidpp.Pizza;
+import com.softwaremethodologyandroidpp.PizzaMaker;
 import com.softwaremethodologyandroidpp.PoultryParty;
 import com.softwaremethodologyandroidpp.R;
 import com.softwaremethodologyandroidpp.Seafood;
@@ -29,11 +30,22 @@ import com.softwaremethodologyandroidpp.VeggieLovers;
 
 import java.util.ArrayList;
 
+
+/**
+ * Class to manage the Specialties Activity view.
+ * @author Abhishek Thakare, Adhit Thakur.
+ */
+
 public class SpecialtiesActivity extends AppCompatActivity {
     private ArrayList <PizzaItem> pizzaList = new ArrayList<>();
     private int [] pizzaImages = {R.drawable.randopizza,R.drawable.glizzygoblin,R.drawable.meatzzapizza,
     R.drawable.pepperonipizza,R.drawable.poultryparty,R.drawable.seafoodpizza,R.drawable.spicyphenom,R.drawable.stinkysally,
     R.drawable.supremepizza,R.drawable.veggielovers};
+
+    /**
+     * Method to initialize store orders.
+     * @param savedInstanceState If the activity is being re-initialized after
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,31 +56,49 @@ public class SpecialtiesActivity extends AppCompatActivity {
         specialtiesRecyclerView.setAdapter(new ViewAdapter(getApplicationContext(),pizzaList));
     }
 
+    /**
+     * On Action Listener for back button to go to main menu.
+     * @param view view of action.
+     */
     public void backButtonAction(View view) {
         Intent intent = new Intent(SpecialtiesActivity.this, MainActivity.class);
         SpecialtiesActivity.this.startActivity(intent);
     }
 
+    /**
+     * Helper method to set up pizza that will be added.
+     */
     private void setupMenuItems(){
+        PizzaMaker pizzaMaker = new PizzaMaker();
         int i = 0;
-        pizzaList.add(new PizzaItem(new Deluxe(),pizzaImages[i]));
+        Pizza selectedPizza = pizzaMaker.createPizza("Deluxe");
+        pizzaList.add(new PizzaItem(selectedPizza,pizzaImages[i]));
         i ++;
-        pizzaList.add(new PizzaItem(new GlizzyGoblin(),pizzaImages[i]));
+        selectedPizza = pizzaMaker.createPizza("Glizzy Goblin");
+        pizzaList.add(new PizzaItem(selectedPizza,pizzaImages[i]));
         i ++;
-        pizzaList.add(new PizzaItem(new Meatzza(),pizzaImages[i]));
+        selectedPizza = pizzaMaker.createPizza("Meatzza");
+        pizzaList.add(new PizzaItem(selectedPizza,pizzaImages[i]));
         i ++;
-        pizzaList.add(new PizzaItem(new Pepperoni(),pizzaImages[i]));
+        selectedPizza = pizzaMaker.createPizza("Pepperoni");
+        pizzaList.add(new PizzaItem(selectedPizza,pizzaImages[i]));
         i ++;
-        pizzaList.add(new PizzaItem(new PoultryParty(),pizzaImages[i]));
+        selectedPizza = pizzaMaker.createPizza("Poultry Party");
+        pizzaList.add(new PizzaItem(selectedPizza,pizzaImages[i]));
         i ++;
-        pizzaList.add(new PizzaItem(new Seafood(),pizzaImages[i]));
+        selectedPizza = pizzaMaker.createPizza("Seafood");
+        pizzaList.add(new PizzaItem(selectedPizza,pizzaImages[i]));
         i ++;
-        pizzaList.add(new PizzaItem(new SpicyPhenom(),pizzaImages[i]));
+        selectedPizza = pizzaMaker.createPizza("Spicy Phenom");
+        pizzaList.add(new PizzaItem(selectedPizza,pizzaImages[i]));
         i ++;
-        pizzaList.add(new PizzaItem(new StinkySally(),pizzaImages[i]));
+        selectedPizza = pizzaMaker.createPizza("Stinky Sally");
+        pizzaList.add(new PizzaItem(selectedPizza,pizzaImages[i]));
         i ++;
-        pizzaList.add(new PizzaItem(new Supreme(),pizzaImages[i]));
+        selectedPizza = pizzaMaker.createPizza("Supreme");
+        pizzaList.add(new PizzaItem(selectedPizza,pizzaImages[i]));
         i ++;
-        pizzaList.add(new PizzaItem(new VeggieLovers(),pizzaImages[i]));
+        selectedPizza = pizzaMaker.createPizza("Veggie Lovers");
+        pizzaList.add(new PizzaItem(selectedPizza,pizzaImages[i]));
     }
 }

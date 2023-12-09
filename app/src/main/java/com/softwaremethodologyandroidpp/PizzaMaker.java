@@ -17,6 +17,10 @@ public class PizzaMaker {
             case "Meatzza" -> new Meatzza();
             case "Seafood" -> new Seafood();
             case "Pepperoni" -> new Pepperoni();
+            case "Glizzy Goblin" -> new GlizzyGoblin();
+            case "Poultry Party" -> new PoultryParty();
+            case "Spicy Phenom" -> new SpicyPhenom();
+            case "Veggie Lovers" -> new StinkySally();
             default -> new BuildYourOwn();
         };
     }
