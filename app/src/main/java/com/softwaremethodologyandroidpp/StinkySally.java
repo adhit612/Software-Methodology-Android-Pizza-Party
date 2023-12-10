@@ -13,7 +13,9 @@ public class StinkySally extends Pizza{
      * Method that creates Supreme speciality pizza.
      */
     public StinkySally() {
-        this.toppings = new ArrayList<>(Arrays.asList(Topping.ONION,Topping.GREENPEPPER,Topping.CRABMEATS,Topping.SQUID,Topping.SHRIMP));
+        this.toppings = new ArrayList<>(Arrays.asList(
+                Topping.ONION,Topping.GREENPEPPER,Topping.CRABMEATS,
+                Topping.SQUID,Topping.SHRIMP));
         this.sauce = Sauce.TOMATO;
     }
 
@@ -42,7 +44,8 @@ public class StinkySally extends Pizza{
      */
     @Override
     public double price() {
-        return Double.parseDouble(decimalFormat.format(getSizePrice()
+        return Double.parseDouble(decimalFormat.format(
+                getSizePrice()
                 + extraCheeseAmount() + extraSauceAmount()));
     }
 

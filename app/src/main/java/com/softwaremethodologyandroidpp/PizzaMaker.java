@@ -20,7 +20,8 @@ public class PizzaMaker {
             case "Glizzy Goblin" -> new GlizzyGoblin();
             case "Poultry Party" -> new PoultryParty();
             case "Spicy Phenom" -> new SpicyPhenom();
-            case "Veggie Lovers" -> new StinkySally();
+            case "Veggie Lovers" -> new VeggieLovers();
+            case "Stinky Sally" -> new StinkySally();
             default -> new BuildYourOwn();
         };
     }

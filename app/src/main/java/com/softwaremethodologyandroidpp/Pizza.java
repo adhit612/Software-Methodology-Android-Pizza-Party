@@ -212,7 +212,8 @@ public abstract class Pizza {
     public boolean equals(Object obj) {
         if (obj instanceof Pizza) {
             Pizza pizza = (Pizza) obj;
-            return this.getToppings().equals(pizza.getToppings()) && this.price() == pizza.price();
+            return this.getToppings().equals(pizza.getToppings()) &&
+                    this.price() == pizza.price();
         }
         return false;
     }

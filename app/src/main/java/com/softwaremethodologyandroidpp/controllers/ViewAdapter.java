@@ -47,7 +47,8 @@ public class ViewAdapter extends RecyclerView.Adapter<ViewHolder>{
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        return new ViewHolder(LayoutInflater.from(context).inflate(R.layout.pizza_item_view,parent,false));
+        return new ViewHolder(LayoutInflater.from(context).
+                inflate(R.layout.pizza_item_view,parent,false));
     }
 
     /**
@@ -58,21 +59,28 @@ public class ViewAdapter extends RecyclerView.Adapter<ViewHolder>{
      */
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.specialtyPizzaImage.setImageResource(items.get(position).getImage());
-        holder.specialtySauceDisplay.setText(items.get(position).getPizza().getSauceAsString());
+        holder.specialtyPizzaImage.setImageResource(items.get(position).
+                getImage());
+        holder.specialtySauceDisplay.setText(items.get(position).
+                getPizza().getSauceAsString());
 
-        holder.specialtyPizzaName.setText(items.get(position).getPizza().getPizzaNameAsString());
+        holder.specialtyPizzaName.setText(items.get(position).
+                getPizza().getPizzaNameAsString());
 
         holder.pizzaQuantityText.setText(String.valueOf(ONE));
         holder.pizzaQuantityText.setEnabled(false);
 
-        ArrayList<Topping> toppingsItems = items.get(position).getPizza().getToppings();
-        ArrayAdapter<Topping> toppingAdapter = new ArrayAdapter<>(context, android.R.layout.simple_list_item_1, toppingsItems);
+        ArrayList<Topping> toppingsItems = items.get(position).
+                getPizza().getToppings();
+        ArrayAdapter<Topping> toppingAdapter = new ArrayAdapter<>
+                (context, android.R.layout.simple_list_item_1, toppingsItems);
         holder.toppingsList.setAdapter(toppingAdapter);
 
         String [] sizeItems = {"Pick","Small","Medium","Large"};
-        ArrayAdapter<String> adapter = new ArrayAdapter<>(context, android.R.layout.simple_spinner_item, sizeItems);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(context,
+                android.R.layout.simple_spinner_item, sizeItems);
+        adapter.setDropDownViewResource
+                (android.R.layout.simple_spinner_dropdown_item);
         holder.sizeSpinner.setSelection(0,false);
         holder.sizeSpinner.setAdapter(adapter);
     }

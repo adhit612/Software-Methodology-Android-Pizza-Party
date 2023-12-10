@@ -85,7 +85,6 @@ public class StoreOrdersActivity extends AppCompatActivity {
                 @Override
                 public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
                     Order order = orderList.get(i);
-                    Log.d("HELLO", order.toString());
                     currentOrderPizzas = order.getPizzaList();
                     pizzaAdapter = new ArrayAdapter<>
                             (StoreOrdersActivity.this,

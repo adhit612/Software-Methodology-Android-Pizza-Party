@@ -18,7 +18,8 @@ public class SpicyPhenom extends Pizza{
      * Method that creates Supreme speciality pizza.
      */
     public SpicyPhenom() {
-        this.toppings = new ArrayList<>(Arrays.asList(Topping.HOTSAUCE,Topping.BLACKOLIVE));
+        this.toppings = new ArrayList<>(Arrays.asList(
+                Topping.HOTSAUCE,Topping.BLACKOLIVE));
         this.sauce = Sauce.TOMATO;
     }
 

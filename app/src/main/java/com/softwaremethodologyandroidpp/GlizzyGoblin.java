@@ -18,7 +18,8 @@ public class GlizzyGoblin extends Pizza{
      * Method that creates Supreme speciality pizza.
      */
     public GlizzyGoblin() {
-        this.toppings = new ArrayList<>(Arrays.asList(Topping.SAUSAGE,Topping.HAM,Topping.ONION));
+        this.toppings = new ArrayList<>
+                (Arrays.asList(Topping.SAUSAGE,Topping.HAM,Topping.ONION));
         this.sauce = Sauce.ALFREDO;
     }
 

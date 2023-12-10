@@ -52,14 +52,16 @@ public class CurrentOrderActivity extends AppCompatActivity {
         Order currOrder = dataSingleton.getOrder();
         initialSetup();
         indexToRemove = -1;
-        if(currOrder != null){
-            if(storeOrders == null) {
+        if (currOrder != null){
+            if (storeOrders == null) {
                 ArrayList<Order> orderList = new ArrayList<>();
                 StoreOrders newStoreOrder = new StoreOrders(orderList);
                 newStoreOrder.add(currOrder);
                 dataSingleton.setStoreOrders(newStoreOrder);
-                currentOrderNumber.setText(String.valueOf(currOrder.getOrderNumber()));
-                ArrayList<Pizza> currentOrderPizzas = currOrder.getPizzaList();
+                currentOrderNumber.setText
+                        (String.valueOf(currOrder.getOrderNumber()));
+                ArrayList<Pizza> currentOrderPizzas =
+                        currOrder.getPizzaList();
                 ArrayAdapter<Pizza> pizzaAdapter = new ArrayAdapter<>(this,
                         android.R.layout.simple_list_item_1, currentOrderPizzas);
                 currentOrderList.setAdapter(pizzaAdapter);
@@ -105,7 +107,8 @@ public class CurrentOrderActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 if(!removePizzaSwitch.isChecked()) {
                     Toast.makeText(getApplicationContext(),
-                            "Please turn remove mode on to remove", Toast.LENGTH_SHORT).show();
+                            "Please turn remove mode on to remove",
+                            Toast.LENGTH_SHORT).show();
                 }
                 else {
                     pizzaToRemove = (Pizza)parent.getItemAtPosition(position);
@@ -113,7 +116,8 @@ public class CurrentOrderActivity extends AppCompatActivity {
                     Order currOrder = dataSingleton.getOrder();
                     if(currOrder == null) {
                         Toast.makeText(getApplicationContext(),
-                                "Order already placed", Toast.LENGTH_SHORT).show();
+                                "Order already placed",
+                                Toast.LENGTH_SHORT).show();
                         return;
                     }
                     ArrayList <Pizza> orderPizzaList = currOrder.getPizzaList();
@@ -127,7 +131,8 @@ public class CurrentOrderActivity extends AppCompatActivity {
                     subtotalLabel.setText(String.valueOf(currOrder.getTotalPriceWithoutTax()));
                     salesTaxLabel.setText(String.valueOf(currOrder.getSalesTaxOfTotal()));
                     orderTotalLabel.setText(String.valueOf(currOrder.getTotalPriceWithSalesTax()));
-                    Toast.makeText(getApplicationContext(), "Pizza Removed", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Pizza Removed",
+                            Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -143,7 +148,8 @@ public class CurrentOrderActivity extends AppCompatActivity {
             StoreOrders storeOrders = dataSingleton.getStoreOrders();
             storeOrders.remove(currOrder);
         }
-        Intent intent = new Intent(CurrentOrderActivity.this, MainActivity.class);
+        Intent intent = new Intent(CurrentOrderActivity.this,
+                MainActivity.class);
         CurrentOrderActivity.this.startActivity(intent);
     }
 
@@ -154,12 +160,14 @@ public class CurrentOrderActivity extends AppCompatActivity {
     public void addToOrderButtonAction(View view) {
         Order currOrder = dataSingleton.getOrder();
         if(currOrder == null) {
-            Toast.makeText(getApplicationContext(), "Add a pizza to place order", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Add a pizza to place order",
+                    Toast.LENGTH_SHORT).show();
             return;
         }
         ArrayList <Pizza> orderPizzaList = currOrder.getPizzaList();
         if(orderPizzaList.size() == 0) {
-            Toast.makeText(getApplicationContext(), "Add a pizza to place order", Toast.LENGTH_SHORT).show();
+            Toast.makeText(getApplicationContext(), "Add a pizza to place order",
+                    Toast.LENGTH_SHORT).show();
             return;
         }
         alertDialogMessage();
@@ -178,11 +186,13 @@ public class CurrentOrderActivity extends AppCompatActivity {
                 currOrder = null;
                 dataSingleton.setOrder(currOrder);
                 dataSingleton.setOrderAdded(false);
-                Toast.makeText(getApplicationContext(), "Order Placed", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Order Placed",
+                        Toast.LENGTH_LONG).show();
             }
         }).setNegativeButton("No", new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(getApplicationContext(), "Continue Shopping", Toast.LENGTH_LONG).show();
+                Toast.makeText(getApplicationContext(), "Continue Shopping",
+                        Toast.LENGTH_LONG).show();
             }
         });
         AlertDialog dialog = alert.create();

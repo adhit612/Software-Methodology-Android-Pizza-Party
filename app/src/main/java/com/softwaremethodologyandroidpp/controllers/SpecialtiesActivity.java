@@ -38,9 +38,11 @@ import java.util.ArrayList;
 
 public class SpecialtiesActivity extends AppCompatActivity {
     private ArrayList <PizzaItem> pizzaList = new ArrayList<>();
-    private int [] pizzaImages = {R.drawable.randopizza,R.drawable.glizzygoblin,R.drawable.meatzzapizza,
-    R.drawable.pepperonipizza,R.drawable.poultryparty,R.drawable.seafoodpizza,R.drawable.spicyphenom,R.drawable.stinkysally,
-    R.drawable.supremepizza,R.drawable.veggielovers};
+    private int [] pizzaImages = {R.drawable.randopizza,R.drawable.glizzygoblin,
+            R.drawable.meatzzapizza, R.drawable.pepperonipizza,
+            R.drawable.poultryparty,R.drawable.seafoodpizza,
+            R.drawable.spicyphenom,R.drawable.stinkysally,
+            R.drawable.supremepizza,R.drawable.veggielovers};
 
     /**
      * Method to initialize store orders.
@@ -50,10 +52,13 @@ public class SpecialtiesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.specialties_activity);
-        RecyclerView specialtiesRecyclerView = findViewById(R.id.rv_specialties);
+        RecyclerView specialtiesRecyclerView =
+                findViewById(R.id.rv_specialties);
         setupMenuItems();
-        specialtiesRecyclerView.setLayoutManager(new LinearLayoutManager(this));
-        specialtiesRecyclerView.setAdapter(new ViewAdapter(getApplicationContext(),pizzaList));
+        specialtiesRecyclerView.setLayoutManager
+                (new LinearLayoutManager(this));
+        specialtiesRecyclerView.setAdapter
+                (new ViewAdapter(getApplicationContext(),pizzaList));
     }
 
     /**
@@ -61,7 +66,8 @@ public class SpecialtiesActivity extends AppCompatActivity {
      * @param view view of action.
      */
     public void backButtonAction(View view) {
-        Intent intent = new Intent(SpecialtiesActivity.this, MainActivity.class);
+        Intent intent = new Intent(SpecialtiesActivity.this,
+                MainActivity.class);
         SpecialtiesActivity.this.startActivity(intent);
     }
 

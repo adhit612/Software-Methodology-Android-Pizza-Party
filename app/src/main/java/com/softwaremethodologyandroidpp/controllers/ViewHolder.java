@@ -75,14 +75,17 @@ public class ViewHolder extends RecyclerView.ViewHolder {
      */
     public ViewHolder(@NonNull View itemView) {
         super(itemView);
-        specialtyPizzaImage = itemView.findViewById(R.id.iv_specialty_pizza_recycler);
+        specialtyPizzaImage = itemView.findViewById
+                (R.id.iv_specialty_pizza_recycler);
         sizeSpinner = itemView.findViewById(R.id.s_sizes);
-        specialtySauceDisplay = itemView.findViewById(R.id.tv_specialty_sauce_display);
+        specialtySauceDisplay = itemView.findViewById
+                (R.id.tv_specialty_sauce_display);
         extraCheeseSwitch = itemView.findViewById(R.id.sw_extra_cheese);
         extraSauceSwitch = itemView.findViewById(R.id.sw_extra_sauce);
         enterQuantityText = itemView.findViewById(R.id.pt_enter_quantity);
         addButton = itemView.findViewById(R.id.b_add_button);
-        specialtyPizzaName = itemView.findViewById(R.id.tv_specialty_pizza_name);
+        specialtyPizzaName = itemView.findViewById
+                (R.id.tv_specialty_pizza_name);
         toppingsList = itemView.findViewById(R.id.lv_toppings_list);
         priceTextField = itemView.findViewById(R.id.tv_price_field);
         pizzaQuantityText = itemView.findViewById(R.id.pt_enter_quantity);
@@ -117,7 +120,9 @@ public class ViewHolder extends RecyclerView.ViewHolder {
                 String [] sizeItems = {"Pick","Small","Medium","Large"};
                 sizeSpinnerSelectedSize = sizeItems[position];
                 if(pizzaToBeAdded != null) {
-                    if (!(sizeSpinnerSelectedSize.equals("") || sizeSpinnerSelectedSize == null || sizeSpinnerSelectedSize.equals("Pick"))) {
+                    if (!(sizeSpinnerSelectedSize.equals("") ||
+                            sizeSpinnerSelectedSize == null ||
+                            sizeSpinnerSelectedSize.equals("Pick"))) {
                         if (sizeSpinnerSelectedSize.equals("Small")) {
                             pizzaToBeAdded.setSize(Size.SMALL);
                             priceTextField.setText(String.valueOf(pizzaToBeAdded.price()));
@@ -129,7 +134,8 @@ public class ViewHolder extends RecyclerView.ViewHolder {
                             priceTextField.setText(String.valueOf(pizzaToBeAdded.price()));
                         }
                         Toast.makeText(selectedItemView.getContext(),
-                                specialtyPizzaName.getText() + " size " + sizeSpinnerSelectedSize, Toast.LENGTH_SHORT).show();
+                                specialtyPizzaName.getText() + " size " +
+                                        sizeSpinnerSelectedSize, Toast.LENGTH_SHORT).show();
                         pizzaQuantityText.setEnabled(true);
                     }
                     else if(sizeSpinnerSelectedSize.equals("Pick")){
@@ -151,9 +157,12 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         extraCheeseSwitch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(pizzaToBeAdded == null || sizeSpinnerSelectedSize.equals("Pick") || sizeSpinnerSelectedSize.equals("") || sizeSpinnerSelectedSize == null){
+                if(pizzaToBeAdded == null || sizeSpinnerSelectedSize.equals("Pick") ||
+                        sizeSpinnerSelectedSize.equals("") ||
+                        sizeSpinnerSelectedSize == null){
                     Toast.makeText(v.getContext(),
-                            specialtyPizzaName.getText() + ": please select size!", Toast.LENGTH_SHORT).show();
+                            specialtyPizzaName.getText() + ": please select size!",
+                            Toast.LENGTH_SHORT).show();
                     extraCheeseSwitch.setChecked(false);
                 }
                 else {
@@ -176,9 +185,12 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         extraSauceSwitch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(pizzaToBeAdded == null || sizeSpinnerSelectedSize.equals("Pick") || sizeSpinnerSelectedSize.equals("") || sizeSpinnerSelectedSize == null){
+                if(pizzaToBeAdded == null || sizeSpinnerSelectedSize.equals("Pick") ||
+                        sizeSpinnerSelectedSize.equals("") ||
+                        sizeSpinnerSelectedSize == null){
                     Toast.makeText(v.getContext(),
-                            specialtyPizzaName.getText() + ": please select size!", Toast.LENGTH_SHORT).show();
+                            specialtyPizzaName.getText() + ": please select size!",
+                            Toast.LENGTH_SHORT).show();
                     extraSauceSwitch.setChecked(false);
                 }
                 else {
@@ -236,13 +248,17 @@ public class ViewHolder extends RecyclerView.ViewHolder {
         addButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(pizzaToBeAdded == null || sizeSpinnerSelectedSize.equals("Pick") || sizeSpinnerSelectedSize.equals("") || sizeSpinnerSelectedSize == null){
+                if(pizzaToBeAdded == null || sizeSpinnerSelectedSize.equals("Pick")
+                        || sizeSpinnerSelectedSize.equals("") ||
+                        sizeSpinnerSelectedSize == null){
                     Toast.makeText(v.getContext(), specialtyPizzaName.getText()
-                            + ": please select size!", Toast.LENGTH_SHORT).show();
+                            + ": please select size!",
+                            Toast.LENGTH_SHORT).show();
                 }
                 else if(!validIntegerEntered){
                     Toast.makeText(v.getContext(), specialtyPizzaName.getText()
-                            + ": please enter valid quantity!", Toast.LENGTH_SHORT).show();
+                            + ": please enter valid quantity!",
+                            Toast.LENGTH_SHORT).show();
                 }
                 else{
                     Order order = dataSingleton.getOrder();
@@ -260,7 +276,8 @@ public class ViewHolder extends RecyclerView.ViewHolder {
                         dataSingleton.setOrder(order);
                     }
                     Toast.makeText(v.getContext(), specialtyPizzaName.getText() + ":"
-                            + "(" + quantity + ") Pizza has been added", Toast.LENGTH_SHORT).show();
+                            + "(" + quantity + ") Pizza has been added",
+                            Toast.LENGTH_SHORT).show();
                 }
             }
         });

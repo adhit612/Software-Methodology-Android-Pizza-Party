@@ -31,7 +31,8 @@ public class MainActivity extends AppCompatActivity {
      * @param view current view location.
      */
     public void specialtiesIVAction(View view) {
-        Intent intent = new Intent(MainActivity.this, SpecialtiesActivity.class);
+        Intent intent = new Intent(MainActivity.this,
+                SpecialtiesActivity.class);
         MainActivity.this.startActivity(intent);
     }
 
@@ -41,7 +42,8 @@ public class MainActivity extends AppCompatActivity {
      * @param view current view location.
      */
     public void buildOwnIVAction(View view) {
-        Intent intent = new Intent(MainActivity.this, BuildOwnActivity.class);
+        Intent intent = new Intent(MainActivity.this,
+                BuildOwnActivity.class);
         MainActivity.this.startActivity(intent);
     }
 
@@ -51,7 +53,8 @@ public class MainActivity extends AppCompatActivity {
      * @param view current view location.
      */
     public void currentOrderIVAction(View view) {
-        Intent intent = new Intent(MainActivity.this, CurrentOrderActivity.class);
+        Intent intent = new Intent(MainActivity.this,
+                CurrentOrderActivity.class);
         MainActivity.this.startActivity(intent);
     }
 
@@ -60,7 +63,8 @@ public class MainActivity extends AppCompatActivity {
      * @param view current view location.
      */
     public void storeOrdersIVAction(View view) {
-        Intent intent = new Intent(MainActivity.this, StoreOrdersActivity.class);
+        Intent intent = new Intent(MainActivity.this,
+                StoreOrdersActivity.class);
         MainActivity.this.startActivity(intent);
     }
 }

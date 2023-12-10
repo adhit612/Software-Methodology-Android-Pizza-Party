@@ -1,150 +1,162 @@
 [
     {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_supremepizza.webp.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/drawable/supremepizza.webp"
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_buildownpizza.webp.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/drawable/buildownpizza.webp"
     },
     {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_randopizza.png.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/drawable/randopizza.png"
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_glizzygoblin.webp.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/drawable/glizzygoblin.webp"
     },
     {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/layout_specialties_activity.xml.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/layout/specialties_activity.xml"
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_deluxepizza.webp.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/drawable/deluxepizza.webp"
     },
     {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/mipmap-anydpi_ic_launcher_round.xml.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/mipmap-anydpi/ic_launcher_round.xml"
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/layout_pizza_item_view.xml.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/layout/pizza_item_view.xml"
     },
     {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_veggielovers.webp.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/drawable/veggielovers.webp"
     },
     {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/xml_data_extraction_rules.xml.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/xml/data_extraction_rules.xml"
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_storeorderspic.webp.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/drawable/storeorderspic.webp"
     },
     {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/layout_pizza_item_view.xml.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/layout/pizza_item_view.xml"
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_pepperonipizza.webp.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/drawable/pepperonipizza.webp"
     },
     {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_stinkysally.webp.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/drawable/stinkysally.webp"
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/layout_specialties_activity.xml.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/layout/specialties_activity.xml"
     },
     {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_spicyphenom.webp.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/drawable/spicyphenom.webp"
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/layout_store_orders_activity.xml.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/layout/store_orders_activity.xml"
     },
     {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_veggielovers.webp.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/drawable/veggielovers.webp"
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/layout_activity_main.xml.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/layout/activity_main.xml"
     },
     {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_currentorderpic.webp.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/drawable/currentorderpic.webp"
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_pizza_pie.jpeg.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/drawable/pizza_pie.jpeg"
     },
     {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/layout_store_orders_activity.xml.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/layout/store_orders_activity.xml"
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/layout_current_order_activity.xml.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/layout/current_order_activity.xml"
     },
     {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_deluxepizza.webp.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/drawable/deluxepizza.webp"
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_pizza_man.png.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/drawable/pizza_man.png"
+    },
+    {
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_meatzzapizza.webp.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/drawable/meatzzapizza.webp"
+    },
+    {
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/mipmap-xxhdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_currentorderpic.webp.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/drawable/currentorderpic.webp"
+    },
+    {
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/mipmap-anydpi/ic_launcher.xml"
+    },
+    {
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/mipmap-xxhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/xml/data_extraction_rules.xml"
+    },
+    {
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_randopizza.png.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/drawable/randopizza.png"
+    },
+    {
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_specialtypizzas.webp.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/drawable/specialtypizzas.webp"
     },
     {
         "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/layout_build_own_activity.xml.flat",
         "source": "com.softwaremethodologyandroidpp.app-main-35:/layout/build_own_activity.xml"
     },
     {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/drawable/ic_launcher_background.xml"
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/xml_backup_rules.xml.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/xml/backup_rules.xml"
     },
     {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/mipmap-anydpi_ic_launcher.xml.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/mipmap-anydpi/ic_launcher.xml"
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/layout_current_order_activity.xml.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/layout/current_order_activity.xml"
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_poultryparty.png.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/drawable/poultryparty.png"
     },
     {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_seafoodpizza.webp.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/drawable/seafoodpizza.webp"
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/xml_backup_rules.xml.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/xml/backup_rules.xml"
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_stinkysally.webp.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/drawable/stinkysally.webp"
     },
     {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_pepperonipizza.webp.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/drawable/pepperonipizza.webp"
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/layout_build_own_activity.xml.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/layout/build_own_activity.xml"
     },
     {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_seafoodpizza.webp.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/drawable/seafoodpizza.webp"
     },
     {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_specialtypizzas.webp.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/drawable/specialtypizzas.webp"
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/mipmap-anydpi/ic_launcher_round.xml"
     },
     {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/layout_activity_main.xml.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/layout/activity_main.xml"
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_storeorderspic.webp.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/drawable/storeorderspic.webp"
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_supremepizza.webp.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/drawable/supremepizza.webp"
     },
     {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/mipmap-xxxhdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_poultryparty.png.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/drawable/poultryparty.png"
-    },
-    {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_buildownpizza.webp.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/drawable/buildownpizza.webp"
-    },
-    {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/mipmap-xhdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/mipmap-xhdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/drawable/ic_launcher_foreground.xml"
-    },
-    {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_glizzygoblin.webp.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/drawable/glizzygoblin.webp"
-    },
-    {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_meatzzapizza.webp.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/drawable/meatzzapizza.webp"
-    },
-    {
-        "merged": "com.softwaremethodologyandroidpp.app-merged_res-33:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.softwaremethodologyandroidpp.app-main-35:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-merged_res-33:/drawable_spicyphenom.webp.flat",
+        "source": "/Users/abhishekthakare/.gradle/daemon/8.0/com.softwaremethodologyandroidpp.app-main-35:/drawable/spicyphenom.webp"
     }
 ]

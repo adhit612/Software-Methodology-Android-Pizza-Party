@@ -18,7 +18,9 @@ public class VeggieLovers extends Pizza{
      * Method that creates Supreme speciality pizza.
      */
     public VeggieLovers() {
-        this.toppings = new ArrayList<>(Arrays.asList(Topping.GREENPEPPER,Topping.ONION,Topping.MUSHROOM,Topping.BLACKOLIVE));
+        this.toppings = new ArrayList<>(Arrays.asList(
+                Topping.GREENPEPPER,Topping.ONION,Topping.MUSHROOM,
+                Topping.BLACKOLIVE));
         this.sauce = Sauce.TOMATO;
     }
 

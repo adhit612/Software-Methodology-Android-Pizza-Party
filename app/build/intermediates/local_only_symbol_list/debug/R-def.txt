@@ -10,6 +10,8 @@ drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable meatzzapizza
 drawable pepperonipizza
+drawable pizza_man
+drawable pizza_pie
 drawable poultryparty
 drawable randopizza
 drawable seafoodpizza
